@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — DarkCV</title>
+  <meta name="description" content="Get in touch with John Doe — full-stack developer available for freelance projects and collaborations.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>></text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+</head>
+<body class="scanlines">
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><span>{</span> DarkCV <span>}</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">home</a>
+        <a href="about.html">about</a>
+        <a href="projects.html">projects</a>
+        <a href="contact.html" class="active">contact</a>
+      </nav>
+      <div class="burger" id="burger" aria-label="Toggle navigation" role="button" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="reveal">nc <span style="color: var(--accent);">darkcv.dev</span> 443</h1>
+      <p class="reveal">// open a connection — let's talk</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <div class="label">Location</div>
+              <div class="value">San Francisco, CA</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="label">Email</div>
+              <div class="value">john@darkcv.dev</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <div class="label">Phone</div>
+              <div class="value">+1 234 567 890</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-code-branch"></i></div>
+            <div>
+              <div class="label">GitHub</div>
+              <div class="value">github.com/johndoe</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+            <div>
+              <div class="label">LinkedIn</div>
+              <div class="value">linkedin.com/in/johndoe</div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-group">
+            <label><span class="prompt-char">$</span> name</label>
+            <input type="text" class="form-input" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label><span class="prompt-char">$</span> email</label>
+            <input type="email" class="form-input" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label><span class="prompt-char">$</span> subject</label>
+            <input type="text" class="form-input" name="subject" placeholder="Project inquiry">
+          </div>
+          <div class="form-group">
+            <label><span class="prompt-char">$</span> message</label>
+            <textarea class="form-input" name="message" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+            <i class="fas fa-paper-plane"></i> send_message()
+          </button>
+          <div class="form-status" id="formStatus"></div>
+        </form>
+      </div>
+
+      <!-- CTA -->
+      <div class="cta-terminal reveal">
+        <div class="terminal-window" style="max-width: 600px; margin: 0 auto;">
+          <div class="terminal-bar">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+            <span>john@darkcv ~ </span>
+          </div>
+          <div class="terminal-body" style="min-height: auto; padding: 24px 32px;">
+            <div class="terminal-line"><span class="prompt">$</span> <span class="cmd">echo "Let's build something together"</span></div>
+            <div class="terminal-line" style="color: var(--accent); font-size: 1.1rem; margin-top: 8px;">Let's build something together</div>
+            <div class="terminal-line" style="margin-top: 12px;"><span class="prompt">$</span> <span class="cmd">_</span><span class="cursor"></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-socials">
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">&copy; <span id="year"></span> DarkCV. Built with terminal-grade precision.</p>
+    </div>
+  </footer>
+
+  <a href="#hero" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

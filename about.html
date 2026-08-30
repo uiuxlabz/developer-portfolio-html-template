@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — DarkCV</title>
+  <meta name="description" content="Learn more about John Doe — a full-stack developer with 10+ years of experience building performant web applications.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>></text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+</head>
+<body class="scanlines">
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><span>{</span> DarkCV <span>}</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">home</a>
+        <a href="about.html" class="active">about</a>
+        <a href="projects.html">projects</a>
+        <a href="contact.html">contact</a>
+      </nav>
+      <div class="burger" id="burger" aria-label="Toggle navigation" role="button" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="reveal">cat <span style="color: var(--accent);">about.md</span></h1>
+      <p class="reveal">// the person behind the terminal</p>
+    </div>
+  </section>
+
+  <!-- About Content -->
+  <section class="section">
+    <div class="container">
+      <div class="about-detail-grid">
+        <div class="about-full-text reveal">
+          <p>I'm a full-stack developer based in San Francisco with over a decade of experience building web applications, APIs, and developer tools. My journey started with tinkering on personal projects and evolved into leading engineering teams at high-growth startups.</p>
+          <p>I specialize in JavaScript/TypeScript ecosystems (React, Node.js, Next.js), but I'm equally comfortable with Python, Go, and cloud infrastructure. My sweet spot is at the intersection of performance engineering and user experience — building things that are both technically elegant and genuinely useful.</p>
+          <p>When I'm not shipping code, you'll find me contributing to open-source projects, writing technical articles about distributed systems, or exploring the latest in AI/ML. I believe in continuous learning and sharing knowledge with the developer community.</p>
+          <p>My philosophy: write code that humans can read, build systems that scale gracefully, and always ship with empathy for the end user.</p>
+        </div>
+        <div class="about-image reveal">
+          <img src="assets/img/profile.jpg" alt="John Doe — Full-Stack Developer" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Detailed Meta -->
+      <div style="margin-top: 60px;">
+        <h2 class="section-title reveal">details</h2>
+        <p class="section-subtitle reveal">// personal information</p>
+        <div class="about-meta-full reveal">
+          <div class="about-meta-item"><span class="label">name:</span><span class="value">John Doe</span></div>
+          <div class="about-meta-item"><span class="label">birthday:</span><span class="value">April 1, 1990</span></div>
+          <div class="about-meta-item"><span class="label">degree:</span><span class="value">M.S. Computer Science</span></div>
+          <div class="about-meta-item"><span class="label">experience:</span><span class="value">10+ Years</span></div>
+          <div class="about-meta-item"><span class="label">phone:</span><span class="value">+1 234 567 890</span></div>
+          <div class="about-meta-item"><span class="label">email:</span><span class="value">john@darkcv.dev</span></div>
+          <div class="about-meta-item"><span class="label">address:</span><span class="value">San Francisco, CA</span></div>
+          <div class="about-meta-item"><span class="label">freelance:</span><span class="value">Available</span></div>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats-row" style="margin-top: 60px;">
+        <div class="stat-card reveal">
+          <div class="stat-number" data-target="10">0</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-number" data-target="100">0</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-number" data-target="200">0</div>
+          <div class="stat-label">Projects Done</div>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div style="margin-top: 60px;">
+        <h2 class="section-title reveal">skills</h2>
+        <p class="section-subtitle reveal">// technical proficiencies</p>
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <div class="skill-card-header">
+              <span class="skill-name">JavaScript / TypeScript</span>
+              <span class="skill-percent">95%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="95"></div></div>
+            <div class="skill-tags">
+              <span class="skill-tag">React</span><span class="skill-tag">Node.js</span><span class="skill-tag">Next.js</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-card-header">
+              <span class="skill-name">Python</span>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="90"></div></div>
+            <div class="skill-tags">
+              <span class="skill-tag">Django</span><span class="skill-tag">FastAPI</span><span class="skill-tag">ML/AI</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-card-header">
+              <span class="skill-name">Go</span>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="80"></div></div>
+            <div class="skill-tags">
+              <span class="skill-tag">Gin</span><span class="skill-tag">gRPC</span><span class="skill-tag">Microservices</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-card-header">
+              <span class="skill-name">DevOps / Cloud</span>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-width="85"></div></div>
+            <div class="skill-tags">
+              <span class="skill-tag">AWS</span><span class="skill-tag">Docker</span><span class="skill-tag">K8s</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-socials">
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">&copy; <span id="year"></span> DarkCV. Built with terminal-grade precision.</p>
+    </div>
+  </footer>
+
+  <a href="#hero" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
