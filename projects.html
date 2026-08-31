@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — DarkCV</title>
+  <meta name="description" content="Browse the project portfolio of John Doe — full-stack developer specializing in performant web applications and developer tools.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>></text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+</head>
+<body class="scanlines">
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><span>{</span> DarkCV <span>}</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">home</a>
+        <a href="about.html">about</a>
+        <a href="projects.html" class="active">projects</a>
+        <a href="contact.html">contact</a>
+      </nav>
+      <div class="burger" id="burger" aria-label="Toggle navigation" role="button" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="reveal">ls <span style="color: var(--accent);">projects/</span></h1>
+      <p class="reveal">// selected work from the terminal</p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section">
+    <div class="container">
+      <!-- Filter Bar -->
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+        <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+        <button class="filter-btn" data-filter="devtools">DevTools</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+        <div class="project-card reveal" data-category="fullstack">
+          <div class="project-thumb">
+            <img src="assets/img/portfolio-1.jpg" alt="Nexus Platform screenshot" loading="lazy">
+            <div class="project-overlay">
+              <div class="code-snippet">const nexus = new Platform({<br>&nbsp;&nbsp;ai: true,<br>&nbsp;&nbsp;scale: 'global'<br>});</div>
+              <div class="links">
+                <a href="#"><i class="fas fa-external-link-alt"></i> Live</a>
+                <a href="#"><i class="fab fa-github"></i> Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Nexus Platform</h3>
+            <p>AI-powered analytics dashboard with real-time data streaming and predictive insights. Built for enterprise scale.</p>
+            <div class="project-tags">
+              <span>React</span><span>Node.js</span><span>TensorFlow</span><span>AWS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="backend">
+          <div class="project-thumb">
+            <img src="assets/img/portfolio-2.jpg" alt="Vault API screenshot" loading="lazy">
+            <div class="project-overlay">
+              <div class="code-snippet">func main() {<br>&nbsp;&nbsp;api := vault.New()<br>&nbsp;&nbsp;api.Listen(":8080")<br>}</div>
+              <div class="links">
+                <a href="#"><i class="fas fa-external-link-alt"></i> Live</a>
+                <a href="#"><i class="fab fa-github"></i> Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Vault API</h3>
+            <p>High-performance REST API gateway handling 10M+ daily requests with sub-10ms latency and auto-scaling.</p>
+            <div class="project-tags">
+              <span>Go</span><span>gRPC</span><span>Redis</span><span>K8s</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="frontend">
+          <div class="project-thumb">
+            <img src="assets/img/portfolio-3.jpg" alt="Pulse UI screenshot" loading="lazy">
+            <div class="project-overlay">
+              <div class="code-snippet">@Component<br>export class PulseUI {<br>&nbsp;&nbsp;theme: 'dark'<br>}</div>
+              <div class="links">
+                <a href="#"><i class="fas fa-external-link-alt"></i> Live</a>
+                <a href="#"><i class="fab fa-github"></i> Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Pulse UI Kit</h3>
+            <p>Open-source component library with 50+ accessible, themeable React components. 2K+ GitHub stars.</p>
+            <div class="project-tags">
+              <span>React</span><span>TypeScript</span><span>Storybook</span><span>A11y</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="devtools">
+          <div class="project-thumb">
+            <img src="assets/img/portfolio-4.jpg" alt="Forge CLI screenshot" loading="lazy">
+            <div class="project-overlay">
+              <div class="code-snippet">$ forge init my-app<br>$ forge deploy --prod<br>&#10003; Deployed to prod</div>
+              <div class="links">
+                <a href="#"><i class="fas fa-external-link-alt"></i> Docs</a>
+                <a href="#"><i class="fab fa-github"></i> Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Forge CLI</h3>
+            <p>Developer CLI tool for scaffolding, testing, and deploying full-stack applications in one command.</p>
+            <div class="project-tags">
+              <span>Python</span><span>Click</span><span>Docker</span><span>CI/CD</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-socials">
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">&copy; <span id="year"></span> DarkCV. Built with terminal-grade precision.</p>
+    </div>
+  </footer>
+
+  <a href="#hero" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
