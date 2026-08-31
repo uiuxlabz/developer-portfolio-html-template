@@ -2,6 +2,10 @@
 
 A dark, terminal-inspired developer portfolio template. Green-on-black aesthetic with typing animations, scan-line effects, and command-prompt motifs throughout.
 
+## 📸 Screenshot
+
+![Homepage Preview](screenshot.png)
+
 ## Design Distinction
 
 **DarkCV** is not your average portfolio. It treats the entire site as a terminal session -- every heading is a command, every label a flag, every section a file being `cat`-ed. The typing animation cycles through real developer commands, skill bars animate on scroll like progress indicators, and the profile photo glows with an emerald halo. Built entirely with semantic HTML, custom CSS (no frameworks), and vanilla JavaScript.
